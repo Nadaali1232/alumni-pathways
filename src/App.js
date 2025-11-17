@@ -61,14 +61,14 @@ export default function AlumniImpactPathways() {
     {
       name: 'Data & Analytics',
       percentage: 27,
-      bgColor: 'bg-cyan-400',
+      bgColor: 'bg-turquoise',
       textColor: 'text-white',
       jobs: ['Assistant Research', 'Revenue Operations Analyst', 'Data Scientist', 'Senior Business Analyst', 'Data Analyst', 'Financial Analyst']
     },
     {
       name: 'Engineering & IT',
       percentage: 27,
-      bgColor: 'bg-orange-400',
+      bgColor: 'bg-sunset',
       textColor: 'text-white',
       jobs: ['ML Engineer', 'AI Engineer', 'AI Automation Engineer', 'Lead AI Consultant', 'Senior Backend Developer', 'Senior Software Engineer']
     },
@@ -140,16 +140,16 @@ export default function AlumniImpactPathways() {
         <div className="text-4xl text-rose-600">+</div>
       </div>
       <div className="absolute top-1/3 right-20 w-16 h-16 opacity-20 animate-bounce" style={{animationDuration: '4s'}}>
-        <div className="w-full h-full bg-orange-400 rotate-45"></div>
+        <div className="w-full h-full bg-sunset rotate-45"></div>
       </div>
-      <div className="absolute bottom-20 left-1/4 w-20 h-20 rounded-full opacity-15 animate-pulse border-2 border-cyan-400"></div>
-      <div className="absolute top-1/2 right-1/3 text-5xl opacity-15 text-orange-400 animate-spin" style={{animationDuration: '8s'}}>+</div>
+      <div className="absolute bottom-20 left-1/4 w-20 h-20 rounded-full opacity-15 animate-pulse border-2 border-turquoise"></div>
+      <div className="absolute top-1/2 right-1/3 text-5xl opacity-15 text-sunset animate-spin" style={{animationDuration: '8s'}}>+</div>
     </div>
   );
 
   // Main View
   const MainView = () => (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-blue-900 text-white p-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-deep-blue to-deep-blue-alt text-white p-8 relative overflow-hidden">
       <BackgroundShapes />
       
       <div className="max-w-7xl mx-auto relative z-10">
@@ -165,22 +165,22 @@ export default function AlumniImpactPathways() {
             {
               title: 'Professional Career',
               icon: Briefcase,
-              bgColor: 'bg-cyan-400',
-              textColor: 'text-blue-950',
+              bgColor: 'bg-turquoise',
+              textColor: 'text-deep-blue',
               view: 'professional-career'
             },
             {
               title: 'Higher Education',
               icon: GraduationCap,
-              bgColor: 'bg-orange-400',
-              textColor: 'text-blue-950',
+              bgColor: 'bg-sunset',
+              textColor: 'text-deep-blue',
               view: 'higher-education'
             },
             {
               title: 'Entrepreneurship',
               icon: Lightbulb,
-              bgColor: 'bg-cyan-400',
-              textColor: 'text-blue-950',
+              bgColor: 'bg-turquoise',
+              textColor: 'text-deep-blue',
               view: 'entrepreneurship'
             }
           ].map((pathway, idx) => {
@@ -204,8 +204,8 @@ export default function AlumniImpactPathways() {
         </div>
 
         {/* Callout Stat */}
-        <div className="bg-white rounded-3xl p-8 text-center shadow-lg border-4 border-orange-400">
-          <p className="text-2xl font-bold text-blue-950">Over 85% of alumni are continuing to grow and advance in their paths</p>
+        <div className="bg-white rounded-3xl p-8 text-center shadow-lg border-4 border-sunset">
+          <p className="text-2xl font-bold text-deep-blue">Over 85% of alumni are continuing to grow and advance in their paths</p>
         </div>
       </div>
 
@@ -237,12 +237,12 @@ export default function AlumniImpactPathways() {
 
   // Professional Career View
   const ProfessionalView = () => (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-blue-900 text-white p-8 overflow-y-auto relative">
+    <div className="min-h-screen bg-gradient-to-br from-deep-blue to-deep-blue-alt text-white p-8 overflow-y-auto relative">
       <BackgroundShapes />
       
       <button
         onClick={() => setCurrentView('main')}
-        className="mb-8 text-orange-400 hover:text-orange-300 flex items-center font-semibold relative z-10"
+        className="mb-8 text-sunset hover:text-sunset-sub flex items-center font-semibold relative z-10"
       >
         ← Back to Overview
       </button>
@@ -258,16 +258,16 @@ export default function AlumniImpactPathways() {
           <div className="grid grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div>
-                <p className="text-5xl font-bold text-orange-400 mb-2">{counterStats.percentage.toFixed(1)}%</p>
+                <p className="text-5xl font-bold text-sunset mb-2">{counterStats.percentage.toFixed(1)}%</p>
                 <p className="text-2xl font-semibold text-white mb-2">of Alumni are Employed</p>
                 <p className="text-lg text-white opacity-80 mb-8">1 Year Post-Program</p>
               </div>
-              <div className="bg-white bg-opacity-10 rounded-2xl p-6 border-2 border-cyan-400">
-                <div className="text-sm text-cyan-400 mb-3 font-bold">BREAKDOWN</div>
+              <div className="bg-white bg-opacity-10 rounded-2xl p-6 border-2 border-turquoise">
+                <div className="text-sm text-turquoise mb-3 font-bold">BREAKDOWN</div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-white">Employed</span>
-                    <span className="font-bold text-orange-400 text-lg">171 alumni</span>
+                    <span className="font-bold text-sunset text-lg">171 alumni</span>
                   </div>
                   <div className="flex justify-between items-center text-white opacity-80">
                     <span>Other Pathways</span>
@@ -284,9 +284,9 @@ export default function AlumniImpactPathways() {
                   <Cell fill="rgba(255,255,255,0.2)" />
                 </Pie>
               </PieChart>
-              <div className="absolute ml-32 space-y-4">
+                <div className="absolute ml-32 space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-4 h-4 bg-orange-400 rounded"></div>
+                  <div className="w-4 h-4 bg-sunset rounded"></div>
                   <span className="text-white font-semibold">Employed</span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -304,9 +304,9 @@ export default function AlumniImpactPathways() {
           
           <div className="grid grid-cols-2 gap-8">
             {/* Pre */}
-            <div className="bg-white bg-opacity-10 rounded-2xl p-8 border-2 border-cyan-400 text-center">
+            <div className="bg-white bg-opacity-10 rounded-2xl p-8 border-2 border-turquoise text-center">
               <h3 className="text-lg font-bold text-white mb-6">But what did "employed" mean?</h3>
-              <p className="text-sm text-cyan-300 mb-6">Pre MIT Emerging Talent</p>
+              <p className="text-sm text-turquoise-alt mb-6">Pre MIT Emerging Talent</p>
               
               <div className="flex justify-center mb-8">
                 <PieChart width={200} height={200}>
@@ -316,29 +316,28 @@ export default function AlumniImpactPathways() {
                   </Pie>
                 </PieChart>
               </div>
-
-              <div className="text-orange-400 font-bold text-sm mb-6">BREAKDOWN OF THAT 43%</div>
+              <div className="text-sunset font-bold text-sm mb-6">BREAKDOWN OF THAT 43%</div>
               
-              <div className="space-y-3 text-left bg-white bg-opacity-5 p-4 rounded-lg border border-cyan-400">
+                <div className="space-y-3 text-left bg-white bg-opacity-5 p-4 rounded-lg border border-turquoise">
                 <div className="flex items-center gap-3 text-white text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-sunset rounded-full"></div>
                   <span>Entry-Level/Service</span>
                 </div>
                 <div className="flex items-center gap-3 text-white text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-sunset rounded-full"></div>
                   <span>Non-Tech Professional</span>
                 </div>
                 <div className="flex items-center gap-3 text-white text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-sunset rounded-full"></div>
                   <span>Tech (Entry-Level)</span>
                 </div>
               </div>
             </div>
 
             {/* Post */}
-            <div className="bg-white bg-opacity-10 rounded-2xl p-8 border-2 border-cyan-400 text-center">
+            <div className="bg-white bg-opacity-10 rounded-2xl p-8 border-2 border-turquoise text-center">
               <h3 className="text-lg font-bold text-white mb-6">Now "employed" means</h3>
-              <p className="text-sm text-cyan-300 mb-6">Post MIT Emerging Talent</p>
+              <p className="text-sm text-turquoise-alt mb-6">Post MIT Emerging Talent</p>
               
               <div className="flex justify-center mb-8">
                 <PieChart width={200} height={200}>
@@ -349,19 +348,19 @@ export default function AlumniImpactPathways() {
                 </PieChart>
               </div>
 
-              <div className="text-orange-400 font-bold text-sm mb-6">BREAKDOWN OF THAT 79%</div>
+              <div className="text-sunset font-bold text-sm mb-6">BREAKDOWN OF THAT 79%</div>
               
-              <div className="space-y-3 text-left bg-white bg-opacity-5 p-4 rounded-lg border border-cyan-400">
+              <div className="space-y-3 text-left bg-white bg-opacity-5 p-4 rounded-lg border border-turquoise">
                 <div className="flex items-center gap-3 text-white text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-sunset rounded-full"></div>
                   <span>Senior-Level Tech</span>
                 </div>
                 <div className="flex items-center gap-3 text-white text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-sunset rounded-full"></div>
                   <span>Mid-Level Professional</span>
                 </div>
                 <div className="flex items-center gap-3 text-white text-sm">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
+                  <div className="w-2 h-2 bg-sunset rounded-full"></div>
                   <span>Specialized Roles</span>
                 </div>
               </div>
@@ -374,25 +373,25 @@ export default function AlumniImpactPathways() {
           <h2 className="text-3xl font-bold mb-12 text-white">From Entry-Level to Tech Leadership</h2>
 
           <div className="mb-16">
-            <h3 className="text-2xl font-bold mb-6 text-cyan-400">Pivoting to Tech</h3>
+            <h3 className="text-2xl font-bold mb-6 text-turquoise">Pivoting to Tech</h3>
             <div className="grid grid-cols-3 gap-6">
               {stories.map((story, idx) => (
                 <div
                   key={idx}
                   onClick={() => setSelectedStory(idx)}
-                  className="group bg-cyan-400 rounded-2xl p-6 hover:shadow-xl transition-all cursor-pointer transform hover:scale-105 border-2 border-orange-400 hover:border-white animate-slideUp relative h-full flex flex-col"
+                  className="group bg-turquoise rounded-2xl p-6 hover:shadow-xl transition-all cursor-pointer transform hover:scale-105 border-2 border-sunset hover:border-white animate-slideUp relative h-full flex flex-col"
                   style={{animationDelay: `${0.1 * idx}s`}}
                 >
-                  <div className="text-sm text-blue-950 mb-2 font-bold uppercase tracking-wider">Before</div>
-                  <div className="text-lg font-bold mb-3 text-blue-950">{story.before}</div>
+                  <div className="text-sm text-deep-blue mb-2 font-bold uppercase tracking-wider">Before</div>
+                  <div className="text-lg font-bold mb-3 text-deep-blue">{story.before}</div>
                   <div className="flex justify-center mb-3 group-hover:scale-125 transition-transform">
-                    <ArrowRight className="w-6 h-6 text-orange-600" />
+                    <ArrowRight className="w-6 h-6 text-sunset-sub" />
                   </div>
-                  <div className="text-sm text-blue-950 mb-2 font-bold uppercase tracking-wider">After</div>
-                  <div className="text-lg font-bold mb-3 text-blue-950">{story.after}</div>
-                  <div className="text-xs font-bold text-orange-600 mb-4">{story.name}</div>
+                  <div className="text-sm text-deep-blue mb-2 font-bold uppercase tracking-wider">After</div>
+                  <div className="text-lg font-bold mb-3 text-deep-blue">{story.after}</div>
+                  <div className="text-xs font-bold text-sunset mb-4">{story.name}</div>
                   
-                  <button className="mt-auto text-sm bg-orange-400 hover:bg-orange-500 text-blue-950 px-4 py-2 rounded-lg font-semibold transition-colors self-start">
+                  <button className="mt-auto text-sm bg-sunset hover:bg-sunset-sub text-deep-blue px-4 py-2 rounded-lg font-semibold transition-colors self-start">
                     Read Story
                   </button>
                 </div>
@@ -401,25 +400,25 @@ export default function AlumniImpactPathways() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-orange-400">Advancing in Tech</h3>
+            <h3 className="text-2xl font-bold mb-6 text-sunset">Advancing in Tech</h3>
             <div className="grid grid-cols-3 gap-6">
               {advancedStories.map((person, idx) => (
                 <div
                   key={idx}
                   onClick={() => setSelectedStory(stories.length + idx)}
-                  className="group bg-orange-400 rounded-2xl p-6 hover:shadow-xl transition-all cursor-pointer transform hover:scale-105 border-2 border-cyan-400 hover:border-white animate-slideUp relative h-full flex flex-col"
+                  className="group bg-sunset rounded-2xl p-6 hover:shadow-xl transition-all cursor-pointer transform hover:scale-105 border-2 border-turquoise hover:border-white animate-slideUp relative h-full flex flex-col"
                   style={{animationDelay: `${0.1 * idx}s`}}
                 >
-                  <div className="text-sm text-blue-950 mb-2 font-bold uppercase tracking-wider">Before</div>
-                  <div className="text-lg font-bold mb-3 text-blue-950">{person.before}</div>
+                  <div className="text-sm text-deep-blue mb-2 font-bold uppercase tracking-wider">Before</div>
+                  <div className="text-lg font-bold mb-3 text-deep-blue">{person.before}</div>
                   <div className="flex justify-center mb-3 group-hover:scale-125 transition-transform">
-                    <ArrowRight className="w-6 h-6 text-blue-950" />
+                    <ArrowRight className="w-6 h-6 text-deep-blue" />
                   </div>
-                  <div className="text-sm text-blue-950 mb-2 font-bold uppercase tracking-wider">After</div>
-                  <div className="text-lg font-bold mb-3 text-blue-950">{person.after}</div>
-                  <div className="text-xs font-bold text-cyan-600 mb-4">{person.name}</div>
+                  <div className="text-sm text-deep-blue mb-2 font-bold uppercase tracking-wider">After</div>
+                  <div className="text-lg font-bold mb-3 text-deep-blue">{person.after}</div>
+                  <div className="text-xs font-bold text-turquoise-alt mb-4">{person.name}</div>
                   
-                  <button className="mt-auto text-sm bg-blue-950 hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-semibold transition-colors self-start">
+                  <button className="mt-auto text-sm bg-deep-blue hover:bg-deep-blue-alt text-white px-4 py-2 rounded-lg font-semibold transition-colors self-start">
                     Read Story
                   </button>
                 </div>
@@ -436,7 +435,7 @@ export default function AlumniImpactPathways() {
               <div
                 key={idx}
                 onClick={() => setSelectedJobCategory(selectedJobCategory === idx ? null : idx)}
-                className={`group ${category.bgColor} rounded-2xl p-8 cursor-pointer hover:shadow-xl transition-all transform hover:scale-105 border-2 border-blue-950 hover:border-white animate-slideUp`}
+                className={`group ${category.bgColor} rounded-2xl p-8 cursor-pointer hover:shadow-xl transition-all transform hover:scale-105 border-2 border-deep-blue hover:border-white animate-slideUp`}
                 style={{animationDelay: `${0.1 * idx}s`}}
               >
                 <h3 className={`text-2xl font-bold mb-4 ${category.textColor}`}>{category.name}</h3>
@@ -453,13 +452,13 @@ export default function AlumniImpactPathways() {
         {/* Employers */}
         <section className="animate-slideUp" style={{animationDelay: '0.8s'}}>
           <h2 className="text-3xl font-bold mb-8 text-white">Trusted by the Top-Tier Organizations</h2>
-          <button
+            <button
             onClick={() => setShowEmployersModal(!showEmployersModal)}
-            className="bg-orange-400 hover:bg-orange-500 text-blue-950 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-left w-full group border-2 border-orange-500"
+            className="bg-sunset hover:bg-sunset-sub text-deep-blue rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-left w-full group border-2 border-sunset"
           >
-            <div className="text-2xl font-bold mb-2 group-hover:text-blue-900">Explore Top Employers</div>
-            <p className="text-blue-950 mb-4 opacity-90">40+ organizations where our alumni work worldwide</p>
-            <div className="flex items-center text-blue-950 group-hover:translate-x-2 transition-transform">
+            <div className="text-2xl font-bold mb-2 group-hover:text-deep-blue-alt">Explore Top Employers</div>
+            <p className="text-deep-blue mb-4 opacity-90">40+ organizations where our alumni work worldwide</p>
+            <div className="flex items-center text-deep-blue group-hover:translate-x-2 transition-transform">
               View Employers <ChevronRight className="ml-2 w-5 h-5" />
             </div>
           </button>
@@ -469,10 +468,10 @@ export default function AlumniImpactPathways() {
       {/* Story Modal */}
       {selectedStory !== null && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 animate-fadeIn">
-          <div className="bg-blue-950 rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform animate-slideUp border-2 border-cyan-400">
+          <div className="bg-deep-blue rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform animate-slideUp border-2 border-turquoise">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-3xl font-bold text-white">{(selectedStory < stories.length ? stories : advancedStories)[selectedStory < stories.length ? selectedStory : selectedStory - stories.length].name}'s Journey</h2>
-              <button onClick={() => setSelectedStory(null)} className="text-orange-400 hover:text-orange-300 hover:rotate-90 transition-transform">
+              <button onClick={() => setSelectedStory(null)} className="text-sunset hover:text-sunset-sub hover:rotate-90 transition-transform">
                 <X className="w-6 h-6" />
               </button>
             </div>
@@ -481,16 +480,16 @@ export default function AlumniImpactPathways() {
               return (
                 <div className="space-y-6">
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-cyan-400 rounded-xl p-4 border-2 border-orange-400">
-                      <p className="text-sm text-blue-950 mb-2 font-bold uppercase">Before</p>
-                      <p className="text-2xl font-bold text-blue-950">{story.before}</p>
+                    <div className="bg-turquoise rounded-xl p-4 border-2 border-sunset">
+                      <p className="text-sm text-deep-blue mb-2 font-bold uppercase">Before</p>
+                      <p className="text-2xl font-bold text-deep-blue">{story.before}</p>
                     </div>
-                    <div className="bg-orange-400 rounded-xl p-4 border-2 border-cyan-400">
-                      <p className="text-sm text-blue-950 mb-2 font-bold uppercase">After</p>
-                      <p className="text-2xl font-bold text-blue-950">{story.after}</p>
+                    <div className="bg-sunset rounded-xl p-4 border-2 border-turquoise">
+                      <p className="text-sm text-deep-blue mb-2 font-bold uppercase">After</p>
+                      <p className="text-2xl font-bold text-deep-blue">{story.after}</p>
                     </div>
                   </div>
-                  <div className="bg-white bg-opacity-10 rounded-xl p-6 border-2 border-cyan-400">
+                  <div className="bg-white bg-opacity-10 rounded-xl p-6 border-2 border-turquoise">
                     <p className="text-lg text-white">{story.story}</p>
                   </div>
                 </div>
@@ -503,23 +502,23 @@ export default function AlumniImpactPathways() {
       {/* Job Category Modal */}
       {selectedJobCategory !== null && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 animate-fadeIn">
-          <div className="bg-blue-950 rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform animate-slideUp border-2 border-cyan-400">
+          <div className="bg-deep-blue rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform animate-slideUp border-2 border-turquoise">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-3xl font-bold text-white">{jobCategories[selectedJobCategory].name}</h2>
-              <button onClick={() => setSelectedJobCategory(null)} className="text-orange-400 hover:text-orange-300 hover:rotate-90 transition-transform">
+              <button onClick={() => setSelectedJobCategory(null)} className="text-sunset hover:text-sunset-sub hover:rotate-90 transition-transform">
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className={`${jobCategories[selectedJobCategory].bgColor} rounded-xl p-6 mb-6 border-2 border-white`}>
-              <p className="text-sm text-blue-950 mb-2 font-bold uppercase">Alumni Distribution</p>
-              <div className="text-5xl font-bold text-blue-950">{jobCategories[selectedJobCategory].percentage}%</div>
+              <p className="text-sm text-deep-blue mb-2 font-bold uppercase">Alumni Distribution</p>
+              <div className="text-5xl font-bold text-deep-blue">{jobCategories[selectedJobCategory].percentage}%</div>
             </div>
             <div>
               <h3 className="text-lg font-bold mb-4 text-white"> Alumni Job Highlights</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {jobCategories[selectedJobCategory].jobs.map((job, idx) => (
-                  <div key={idx} className="bg-white bg-opacity-10 rounded-lg p-4 flex items-start border-2 border-cyan-400 hover:border-orange-400 transition-colors animate-slideUp" style={{animationDelay: `${0.05 * idx}s`}}>
-                    <Star className="w-5 h-5 mr-3 flex-shrink-0 text-orange-400" />
+                  <div key={idx} className="bg-white bg-opacity-10 rounded-lg p-4 flex items-start border-2 border-turquoise hover:border-sunset transition-colors animate-slideUp" style={{animationDelay: `${0.05 * idx}s`}}>
+                    <Star className="w-5 h-5 mr-3 flex-shrink-0 text-sunset" />
                     <span className="font-semibold text-white">{job}</span>
                   </div>
                 ))}
@@ -532,20 +531,20 @@ export default function AlumniImpactPathways() {
       {/* Employers Modal */}
       {showEmployersModal && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 overflow-y-auto animate-fadeIn">
-          <div className="bg-blue-950 rounded-2xl p-8 max-w-5xl w-full my-8 shadow-2xl transform animate-slideUp border-2 border-cyan-400">
+          <div className="bg-deep-blue rounded-2xl p-8 max-w-5xl w-full my-8 shadow-2xl transform animate-slideUp border-2 border-turquoise">
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-3xl font-bold text-white">Our Top Employers</h2>
-              <button onClick={() => setShowEmployersModal(false)} className="text-orange-400 hover:text-orange-300 hover:rotate-90 transition-transform">
+              <button onClick={() => setShowEmployersModal(false)} className="text-sunset hover:text-sunset-sub hover:rotate-90 transition-transform">
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className="space-y-8 max-h-96 overflow-y-auto">
               {Object.entries(employers).map((category, idx) => (
                 <div key={idx} className="animate-slideUp" style={{animationDelay: `${0.1 * idx}s`}}>
-                  <h3 className="text-lg font-bold text-orange-400 mb-4">{category[0]}</h3>
+                  <h3 className="text-lg font-bold text-sunset mb-4">{category[0]}</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                     {category[1].map((company, cidx) => (
-                      <div key={cidx} className="bg-cyan-400 rounded-lg p-4 text-center font-semibold text-blue-950 hover:bg-orange-400 hover:border-white transition-all transform cursor-pointer border-2 border-blue-950 animate-slideUp" style={{animationDelay: `${0.03 * cidx}s`}}>
+                      <div key={cidx} className="bg-turquoise rounded-lg p-4 text-center font-semibold text-deep-blue hover:bg-sunset hover:border-white transition-all transform cursor-pointer border-2 border-deep-blue animate-slideUp" style={{animationDelay: `${0.03 * cidx}s`}}>
                         {company}
                       </div>
                     ))}
@@ -561,12 +560,12 @@ export default function AlumniImpactPathways() {
 
   // Academic View
   const AcademicView = () => (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-blue-900 text-white p-8 overflow-y-auto relative">
+    <div className="min-h-screen bg-gradient-to-br from-deep-blue to-deep-blue-alt text-white p-8 overflow-y-auto relative">
       <BackgroundShapes />
 
       <button
         onClick={() => setCurrentView('main')}
-        className="mb-8 text-orange-400 hover:text-orange-300 flex items-center font-semibold relative z-10"
+        className="mb-8 text-sunset hover:text-sunset-sub flex items-center font-semibold relative z-10"
       >
         ← Back to Overview
       </button>
@@ -576,16 +575,16 @@ export default function AlumniImpactPathways() {
           <h1 className="text-5xl font-bold mb-8 text-white">THE ACADEMIC PATHWAY</h1>
           
           {/* Key Stat */}
-          <div className="bg-white bg-opacity-10 rounded-2xl p-8 border-2 border-cyan-400 shadow-lg mb-12">
+          <div className="bg-white bg-opacity-10 rounded-2xl p-8 border-2 border-turquoise shadow-lg mb-12">
             <div className="flex items-center gap-4">
-              <div className="text-6xl font-bold text-orange-400">53.3%</div>
+              <div className="text-6xl font-bold text-sunset">53.3%</div>
               <div className="text-xl text-white">of unemployed alumni are pursuing undergraduate or graduate degrees at top universities worldwide</div>
             </div>
           </div>
 
-          <div className="bg-orange-400 rounded-2xl p-10 border-2 border-cyan-400 shadow-lg">
-            <div className="text-6xl font-bold text-blue-950">80%+</div>
-            <p className="text-2xl mt-3 text-blue-950">of Alumni Hold a University Degree</p>
+          <div className="bg-sunset rounded-2xl p-10 border-2 border-turquoise shadow-lg">
+            <div className="text-6xl font-bold text-deep-blue">80%+</div>
+            <p className="text-2xl mt-3 text-deep-blue">of Alumni Hold a University Degree</p>
           </div>
         </section>
 
@@ -598,9 +597,9 @@ export default function AlumniImpactPathways() {
               { field: 'Business & Economics', percentage: 19 },
               { field: 'Engineering', percentage: 18 }
             ].map((item, idx) => (
-              <div key={idx} className="bg-cyan-400 rounded-xl p-6 hover:shadow-lg transition-all transform hover:scale-105 border-2 border-orange-400 animate-slideUp group" style={{animationDelay: `${0.1 * idx}s`}}>
-                <div className="text-5xl font-bold mb-2 text-blue-950 group-hover:text-orange-600 transition-colors">{item.percentage}%</div>
-                <p className="text-lg font-semibold text-blue-950">{item.field}</p>
+              <div key={idx} className="bg-turquoise rounded-xl p-6 hover:shadow-lg transition-all transform hover:scale-105 border-2 border-sunset animate-slideUp group" style={{animationDelay: `${0.1 * idx}s`}}>
+                <div className="text-5xl font-bold mb-2 text-deep-blue group-hover:text-sunset-sub transition-colors">{item.percentage}%</div>
+                <p className="text-lg font-semibold text-deep-blue">{item.field}</p>
               </div>
             ))}
           </div>
@@ -610,11 +609,11 @@ export default function AlumniImpactPathways() {
           <h2 className="text-3xl font-bold mb-8 text-white">Placements at World-Class Institutions</h2>
           <button
             onClick={() => setShowUniversitiesModal(!showUniversitiesModal)}
-            className="bg-cyan-400 hover:bg-cyan-500 text-blue-950 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-left w-full group border-2 border-cyan-500"
+            className="bg-turquoise hover:bg-turquoise-alt text-deep-blue rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-left w-full group border-2 border-turquoise"
           >
-            <div className="text-2xl font-bold mb-2 group-hover:text-blue-900">Top University Placements</div>
-            <p className="text-blue-950 mb-4">Explore institutions where our alumni study</p>
-            <div className="flex items-center text-blue-950 group-hover:translate-x-2 transition-transform">
+            <div className="text-2xl font-bold mb-2 group-hover:text-deep-blue-alt">Top University Placements</div>
+            <p className="text-deep-blue mb-4">Explore institutions where our alumni study</p>
+            <div className="flex items-center text-deep-blue group-hover:translate-x-2 transition-transform">
               Explore <ChevronRight className="ml-2 w-5 h-5" />
             </div>
           </button>
@@ -623,8 +622,8 @@ export default function AlumniImpactPathways() {
             <h3 className="text-2xl font-bold text-white mb-6">Discover the Scholarships Our Alumni Have Secured</h3>
             <div className="grid grid-cols-3 gap-6">
               {scholarships.map((scholarship, idx) => (
-                <div key={idx} className="bg-orange-400 rounded-xl p-6 text-center transform hover:scale-105 transition-transform border-2 border-white hover:border-cyan-400 animate-slideUp" style={{animationDelay: `${0.1 * idx}s`}}>
-                  <div className="text-lg font-bold text-blue-950">{scholarship}</div>
+                <div key={idx} className="bg-sunset rounded-xl p-6 text-center transform hover:scale-105 transition-transform border-2 border-white hover:border-turquoise animate-slideUp" style={{animationDelay: `${0.1 * idx}s`}}>
+                  <div className="text-lg font-bold text-deep-blue">{scholarship}</div>
                 </div>
               ))}
             </div>
@@ -638,24 +637,24 @@ export default function AlumniImpactPathways() {
               <div
                 key={idx}
                 onClick={() => setSelectedScholar(idx)}
-                className="group bg-cyan-400 rounded-3xl overflow-hidden hover:shadow-2xl transition-all cursor-pointer transform hover:scale-105 border-4 border-orange-400 hover:border-white animate-slideUp relative flex flex-col h-full"
+                className="group bg-turquoise rounded-3xl overflow-hidden hover:shadow-2xl transition-all cursor-pointer transform hover:scale-105 border-4 border-sunset hover:border-white animate-slideUp relative flex flex-col h-full"
                 style={{animationDelay: `${0.1 * idx}s`}}
               >
                 {/* Header with Degree and University */}
                 <div className="p-6 text-center">
-                  <div className="text-lg font-bold text-blue-950 mb-2">{scholar.degree}</div>
-                  <div className="text-sm font-semibold text-blue-950 italic opacity-80">{scholar.university}</div>
+                  <div className="text-lg font-bold text-deep-blue mb-2">{scholar.degree}</div>
+                  <div className="text-sm font-semibold text-deep-blue italic opacity-80">{scholar.university}</div>
                 </div>
 
                 {/* Scholar name and story */}
                 <div className="px-6 pb-6 flex flex-col flex-grow">
-                  <h3 className="text-xl font-bold mb-4 text-blue-950 text-center">{scholar.name}'s Journey</h3>
-                  <p className="text-sm text-blue-950 mb-6 flex-grow line-clamp-4">{scholar.teaser}</p>
+                  <h3 className="text-xl font-bold mb-4 text-deep-blue text-center">{scholar.name}'s Journey</h3>
+                  <p className="text-sm text-deep-blue mb-6 flex-grow line-clamp-4">{scholar.teaser}</p>
                 </div>
 
                 {/* Button */}
                 <div className="px-6 pb-6">
-                  <button className="w-full text-base bg-orange-400 hover:bg-orange-500 text-white font-semibold px-4 py-2 rounded-lg transition-colors">
+                  <button className="w-full text-base bg-sunset hover:bg-sunset-sub text-white font-semibold px-4 py-2 rounded-lg transition-colors">
                     Read {scholar.name === 'Morteza' ? 'His' : 'Her'} Story
                   </button>
                 </div>
@@ -667,16 +666,16 @@ export default function AlumniImpactPathways() {
 
       {showUniversitiesModal && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 overflow-y-auto animate-fadeIn">
-          <div className="bg-blue-950 rounded-2xl p-8 max-w-4xl w-full my-8 shadow-2xl transform animate-slideUp border-2 border-cyan-400">
+          <div className="bg-deep-blue rounded-2xl p-8 max-w-4xl w-full my-8 shadow-2xl transform animate-slideUp border-2 border-turquoise">
             <div className="flex justify-between items-center mb-8">
               <h2 className="text-3xl font-bold text-white">Top University Placements</h2>
-              <button onClick={() => setShowUniversitiesModal(false)} className="text-orange-400 hover:text-orange-300 hover:rotate-90 transition-transform">
+              <button onClick={() => setShowUniversitiesModal(false)} className="text-sunset hover:text-sunset-sub hover:rotate-90 transition-transform">
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-h-80 overflow-y-auto">
               {universities.map((uni, idx) => (
-                <div key={idx} className="bg-cyan-400 rounded-lg p-4 hover:shadow-lg transition-all hover:scale-105 transform cursor-pointer border-2 border-orange-400 animate-slideUp font-bold text-blue-950" style={{animationDelay: `${0.05 * idx}s`}}>
+                <div key={idx} className="bg-turquoise rounded-lg p-4 hover:shadow-lg transition-all hover:scale-105 transform cursor-pointer border-2 border-sunset animate-slideUp font-bold text-deep-blue" style={{animationDelay: `${0.05 * idx}s`}}>
                   {uni}
                 </div>
               ))}
@@ -688,21 +687,21 @@ export default function AlumniImpactPathways() {
       {/* Scholar Story Modal */}
       {selectedScholar !== null && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 animate-fadeIn">
-          <div className="bg-blue-950 rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform animate-slideUp border-2 border-cyan-400">
+          <div className="bg-deep-blue rounded-2xl p-8 max-w-2xl w-full shadow-2xl transform animate-slideUp border-2 border-turquoise">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-3xl font-bold text-white">{scholars[selectedScholar].name}'s Journey</h2>
-              <button onClick={() => setSelectedScholar(null)} className="text-orange-400 hover:text-orange-300 hover:rotate-90 transition-transform">
+              <button onClick={() => setSelectedScholar(null)} className="text-sunset hover:text-sunset-sub hover:rotate-90 transition-transform">
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className="space-y-6">
-              <div className="bg-cyan-400 rounded-xl p-6 border-2 border-orange-400">
-                <p className="font-bold text-blue-950 mb-2">{scholars[selectedScholar].degree}</p>
-                <p className="italic text-blue-950">{scholars[selectedScholar].university}</p>
+              <div className="bg-turquoise rounded-xl p-6 border-2 border-sunset">
+                <p className="font-bold text-deep-blue mb-2">{scholars[selectedScholar].degree}</p>
+                <p className="italic text-deep-blue">{scholars[selectedScholar].university}</p>
               </div>
-              <div className="bg-white bg-opacity-10 rounded-xl p-6 border-2 border-cyan-400">
+              <div className="bg-white bg-opacity-10 rounded-xl p-6 border-2 border-turquoise">
                 <p className="text-lg text-white mb-6">{scholars[selectedScholar].fullStory}</p>
-                <div className="text-2xl italic text-orange-400 font-semibold">"{scholars[selectedScholar].quote}"</div>
+                <div className="text-2xl italic text-sunset font-semibold">"{scholars[selectedScholar].quote}"</div>
               </div>
             </div>
           </div>
@@ -713,12 +712,12 @@ export default function AlumniImpactPathways() {
 
   // Entrepreneurship View
   const EntrepreneurshipView = () => (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-blue-900 text-white p-8 overflow-y-auto relative">
+    <div className="min-h-screen bg-gradient-to-br from-deep-blue to-deep-blue-alt text-white p-8 overflow-y-auto relative">
       <BackgroundShapes />
 
       <button
         onClick={() => setCurrentView('main')}
-        className="mb-8 text-orange-400 hover:text-orange-300 flex items-center font-semibold relative z-10"
+        className="mb-8 text-sunset hover:text-sunset-sub flex items-center font-semibold relative z-10"
       >
         ← Back to Overview
       </button>
@@ -736,21 +735,21 @@ export default function AlumniImpactPathways() {
               <div
                 key={idx}
                 onClick={() => { setSelectedVenture(venture.name); setShowVentureModal(true); }}
-                className="group bg-cyan-400 rounded-xl p-6 hover:shadow-xl transition-all transform hover:scale-105 cursor-pointer border-2 border-orange-400 hover:border-white animate-slideUp flex flex-col"
+                className="group bg-turquoise rounded-xl p-6 hover:shadow-xl transition-all transform hover:scale-105 cursor-pointer border-2 border-sunset hover:border-white animate-slideUp flex flex-col"
                 style={{animationDelay: `${0.05 * idx}s`}}
               >
                 <div>
-                  <h3 className="text-xl font-bold mb-1 text-blue-950">{venture.name}</h3>
-                  <div className="text-sm text-blue-950 mb-2">by: <span className="font-semibold">{venture.alumni}</span></div>
-                  <p className="text-sm text-blue-950 mb-3 opacity-90">{venture.focus}</p>
-                  <div className="text-xs bg-orange-400 text-blue-950 px-3 py-1 rounded inline-block mb-3 font-semibold">{venture.category}</div>
-                  <p className="font-semibold text-blue-950 text-sm mb-4">{venture.impact}</p>
+                  <h3 className="text-xl font-bold mb-1 text-deep-blue">{venture.name}</h3>
+                  <div className="text-sm text-deep-blue mb-2">by: <span className="font-semibold">{venture.alumni}</span></div>
+                  <p className="text-sm text-deep-blue mb-3 opacity-90">{venture.focus}</p>
+                  <div className="text-xs bg-sunset text-deep-blue px-3 py-1 rounded inline-block mb-3 font-semibold">{venture.category}</div>
+                  <p className="font-semibold text-deep-blue text-sm mb-4">{venture.impact}</p>
                 </div>
 
                 <div className="mt-auto text-right">
                   <button
                     onClick={() => { setSelectedVenture(venture.name); setShowVentureModal(true); }}
-                    className="text-sm font-bold flex items-center text-white bg-blue-950 hover:bg-blue-900 px-3 py-2 rounded transition-colors"
+                    className="text-sm font-bold flex items-center text-white bg-deep-blue hover:bg-deep-blue-alt px-3 py-2 rounded transition-colors"
                   >
                     Explore Initiative <ChevronRight className="ml-2 w-4 h-4" />
                   </button>
@@ -763,23 +762,23 @@ export default function AlumniImpactPathways() {
         {/* Venture Modal (shows ventureDescriptions content) */}
         {showVentureModal && selectedVenture && (
           <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 animate-fadeIn">
-            <div className="bg-blue-950 rounded-2xl p-8 max-w-3xl w-full my-8 shadow-2xl transform animate-slideUp border-2 border-cyan-400">
+            <div className="bg-deep-blue rounded-2xl p-8 max-w-3xl w-full my-8 shadow-2xl transform animate-slideUp border-2 border-turquoise">
               <div className="flex justify-between items-start mb-6">
                 <div>
                   <h2 className="text-2xl font-bold text-white">{selectedVenture}</h2>
-                  <div className="text-sm text-orange-400 font-semibold mt-1">by: {ventures.find(v => v.name === selectedVenture)?.alumni || '—'}</div>
+                  <div className="text-sm text-sunset font-semibold mt-1">by: {ventures.find(v => v.name === selectedVenture)?.alumni || '—'}</div>
                 </div>
-                <button onClick={() => { setShowVentureModal(false); setSelectedVenture(null); }} className="text-orange-400 hover:text-orange-300">
+                <button onClick={() => { setShowVentureModal(false); setSelectedVenture(null); }} className="text-sunset hover:text-sunset-sub">
                   <X className="w-6 h-6" />
                 </button>
               </div>
               <div className="space-y-4">
-                <div className="bg-white bg-opacity-5 rounded-xl p-4 border-2 border-cyan-400">
+                <div className="bg-white bg-opacity-5 rounded-xl p-4 border-2 border-turquoise">
                   <p className="text-white">{ventureDescriptions[selectedVenture] || 'Description not available.'}</p>
                 </div>
-                <div className="text-sm text-blue-950">
-                  <div className="inline-block bg-orange-400 px-3 py-1 rounded mr-2 font-semibold">{ventures.find(v => v.name === selectedVenture)?.category}</div>
-                  <span className="font-semibold">{ventures.find(v => v.name === selectedVenture)?.impact}</span>
+                <div className="text-sm text-deep-blue">
+                  <div className="inline-block bg-sunset px-3 py-1 rounded mr-2 font-semibold text-deep-blue">{ventures.find(v => v.name === selectedVenture)?.category}</div>
+                  <span className="font-semibold text-deep-blue">{ventures.find(v => v.name === selectedVenture)?.impact}</span>
                 </div>
               </div>
             </div>
@@ -789,7 +788,7 @@ export default function AlumniImpactPathways() {
         {/* Impact Multiplier */}
         <section className="animate-slideUp" style={{animationDelay: '0.4s'}}>
           <h2 className="text-3xl font-bold mb-8 text-white">The Multiplier Effect</h2>
-          <div className="bg-white bg-opacity-10 rounded-2xl p-8 mb-8 border-2 border-cyan-400">
+          <div className="bg-white bg-opacity-10 rounded-2xl p-8 mb-8 border-2 border-turquoise">
             <p className="text-lg text-white italic">
               "Our entrepreneurs are not just building businesses; they are building communities. Their initiatives are a testament to the program's focus on agency and problem-solving."
             </p>
@@ -797,14 +796,14 @@ export default function AlumniImpactPathways() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { stat: '1000+', label: 'People Trained', desc: 'via ADAI Circle', bgColor: 'bg-cyan-400' },
-              { stat: '200+', label: 'Women & Girls Empowered', desc: 'via SheRise', bgColor: 'bg-orange-400' },
-              { stat: '500+', label: 'People Mentored', desc: 'Across all initiatives', bgColor: 'bg-cyan-400' }
+              { stat: '1000+', label: 'People Trained', desc: 'via ADAI Circle', bgColor: 'bg-turquoise' },
+              { stat: '200+', label: 'Women & Girls Empowered', desc: 'via SheRise', bgColor: 'bg-sunset' },
+              { stat: '500+', label: 'People Mentored', desc: 'Across all initiatives', bgColor: 'bg-turquoise' }
             ].map((metric, idx) => (
-              <div key={idx} className={`${metric.bgColor} rounded-xl p-8 text-center transform hover:scale-105 transition-transform border-2 border-blue-950 hover:border-white animate-slideUp`} style={{animationDelay: `${0.1 * idx}s`}}>
-                <div className="text-6xl font-bold mb-2 text-blue-950 animate-pulse">{metric.stat}</div>
-                <p className="text-lg font-semibold mb-1 text-blue-950">{metric.label}</p>
-                <p className="text-sm text-blue-950 opacity-80">{metric.desc}</p>
+              <div key={idx} className={`${metric.bgColor} rounded-xl p-8 text-center transform hover:scale-105 transition-transform border-2 border-deep-blue hover:border-white animate-slideUp`} style={{animationDelay: `${0.1 * idx}s`}}>
+                <div className="text-6xl font-bold mb-2 text-deep-blue animate-pulse">{metric.stat}</div>
+                <p className="text-lg font-semibold mb-1 text-deep-blue">{metric.label}</p>
+                <p className="text-sm text-deep-blue opacity-80">{metric.desc}</p>
               </div>
             ))}
           </div>

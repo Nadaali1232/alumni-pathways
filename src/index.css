@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-deep-blue: #010F35;
+  --color-deep-blue-alt: #00184F;
+  --color-turquoise: #02AAAA;
+  --color-turquoise-alt: #00C1C1;
+  --color-mit-bordeaux: #A31F34;
+  --color-sunset: #FF8500;
+  --color-sunset-sub: #FFB600;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
