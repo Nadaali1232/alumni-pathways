@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alumni-pathways/static/css/main.3a0d29d7.css",
-    "main.js": "/alumni-pathways/static/js/main.3b8f4e99.js",
+    "main.css": "/alumni-pathways/static/css/main.f2cbee14.css",
+    "main.js": "/alumni-pathways/static/js/main.5f09cdac.js",
     "static/js/453.432abed5.chunk.js": "/alumni-pathways/static/js/453.432abed5.chunk.js",
     "index.html": "/alumni-pathways/index.html",
-    "main.3a0d29d7.css.map": "/alumni-pathways/static/css/main.3a0d29d7.css.map",
-    "main.3b8f4e99.js.map": "/alumni-pathways/static/js/main.3b8f4e99.js.map",
+    "main.f2cbee14.css.map": "/alumni-pathways/static/css/main.f2cbee14.css.map",
+    "main.5f09cdac.js.map": "/alumni-pathways/static/js/main.5f09cdac.js.map",
     "453.432abed5.chunk.js.map": "/alumni-pathways/static/js/453.432abed5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a0d29d7.css",
-    "static/js/main.3b8f4e99.js"
+    "static/css/main.f2cbee14.css",
+    "static/js/main.5f09cdac.js"
   ]
 }
