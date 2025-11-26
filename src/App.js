@@ -67,7 +67,7 @@ export default function AlumniImpactPathways() {
     },
     {
       name: 'Engineering & IT',
-      percentage: 27,
+      percentage: 28,
       bgColor: 'bg-sunset',
       textColor: 'text-white',
       jobs: ['ML Engineer', 'AI Engineer', 'AI Automation Engineer', 'Lead AI Consultant', 'Senior Backend Developer', 'Senior Software Engineer']
@@ -203,10 +203,10 @@ export default function AlumniImpactPathways() {
           })}
         </div>
 
-        {/* Callout Stat */}
-        <div className="bg-white rounded-3xl p-8 text-center shadow-lg border-4 border-sunset">
-          <p className="text-2xl font-bold text-deep-blue">Over 85% of alumni are continuing to grow and advance in their paths</p>
-        </div>
+          {/* Callout Stat */}
+          <div className="bg-deep-blue rounded-3xl p-8 text-center shadow-lg border-4 border-turquoise">
+            <p className="text-2xl font-bold text-white">Over 91% of alumni are continuing to grow and advance in their paths</p>
+          </div>
       </div>
 
       <style>{`
@@ -277,14 +277,14 @@ export default function AlumniImpactPathways() {
               </div>
             </div>
 
-            <div className="flex items-center justify-center h-80">
+            <div className="flex items-center justify-center h-80 relative">
               <PieChart width={300} height={300}>
                 <Pie data={[{name: 'Employed', value: 79.2}, {name: 'Other', value: 20.8}]} cx={150} cy={150} innerRadius={60} outerRadius={100} startAngle={90} endAngle={-270} dataKey="value">
                   <Cell fill="#f98f0f" />
                   <Cell fill="rgba(255,255,255,0.2)" />
                 </Pie>
               </PieChart>
-                <div className="absolute ml-32 space-y-4">
+              <div className="absolute left-64 top-1/2 -translate-y-1/2 space-y-4 lg:left-72 xl:left-80">
                 <div className="flex items-center gap-3">
                   <div className="w-4 h-4 bg-sunset rounded"></div>
                   <span className="text-white font-semibold">Employed</span>
@@ -310,13 +310,13 @@ export default function AlumniImpactPathways() {
               
               <div className="flex justify-center mb-8">
                 <PieChart width={200} height={200}>
-                  <Pie data={[{name: 'Employed', value: 43}, {name: 'Other', value: 57}]} cx={100} cy={100} innerRadius={40} outerRadius={70} startAngle={90} endAngle={-270} dataKey="value">
+                  <Pie data={[{name: 'Employed', value: 47}, {name: 'Other', value: 57}]} cx={100} cy={100} innerRadius={40} outerRadius={70} startAngle={90} endAngle={-270} dataKey="value">
                     <Cell fill="#f97316" />
                     <Cell fill="#9d2030" />
                   </Pie>
                 </PieChart>
               </div>
-              <div className="text-sunset font-bold text-sm mb-6">BREAKDOWN OF THAT 43%</div>
+              <div className="text-sunset font-bold text-sm mb-6">BREAKDOWN OF THAT 47%</div>
               
                 <div className="space-y-3 text-left bg-white bg-opacity-5 p-4 rounded-lg border border-turquoise">
                 <div className="flex items-center gap-3 text-white text-sm">
@@ -593,9 +593,9 @@ export default function AlumniImpactPathways() {
           <p className="text-lg text-white opacity-90 mb-8">Our alumni choose disciplines at the heart of today's critical industries, aligning education with opportunity and driving innovation across global institutions.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {[
-              { field: 'Computer & IT', percentage: 30 },
-              { field: 'Business & Economics', percentage: 19 },
-              { field: 'Engineering', percentage: 18 }
+              { field: 'Computer & IT', percentage: 33.3 },
+              { field: 'Business & Economics', percentage: 20.4 },
+              { field: 'Engineering', percentage: 19.4 }
             ].map((item, idx) => (
               <div key={idx} className="bg-turquoise rounded-xl p-6 hover:shadow-lg transition-all transform hover:scale-105 border-2 border-sunset animate-slideUp group" style={{animationDelay: `${0.1 * idx}s`}}>
                 <div className="text-5xl font-bold mb-2 text-deep-blue group-hover:text-sunset-sub transition-colors">{item.percentage}%</div>
