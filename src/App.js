@@ -94,7 +94,7 @@ export default function AlumniImpactPathways() {
   ];
 
   const employers = {
-    'Big Tech': ['Apple', 'Amazon', 'Microsoft', 'Meta', 'Samsung', 'Google', 'Facebook', 'Tesla'],
+    'Big Tech': ['Apple', 'Amazon', 'Microsoft', 'Meta', 'Samsung', 'Google', 'Facebook'],
     'Multinational': ['Nestle', 'Shell', 'Boeing', 'Caterpillar', 'Hitachi', 'Siemens'],
     'Finance & Services': ['Deloitte', 'PWC', 'JP Morgan', 'IMF', 'Goldman Sachs'],
     'Telecom & IT': ['Bell Canada', 'Infosys', 'TCS', 'Nokia', 'IBM'],
